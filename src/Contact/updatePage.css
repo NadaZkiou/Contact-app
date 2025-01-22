@@ -1,0 +1,161 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    background-color: #FFF0DC;
+    color: #fff;
+    align-items: center;
+    left: 100px;
+    box-shadow: 2px 2px 2px gray;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .form {
+      width: 330px;
+      left: 10px;
+    }
+  }
+  
+  .form input {
+    background-color: #FFF0DC;
+    color: gray;
+    width: 100%;
+    padding: 20px 12px 8px 12px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .form label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  
+  .form label span {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    transform: translateY(50%);
+    color: gray;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+  }
+  
+  .form label input:focus + span,
+  .form label input:not(:placeholder-shown) + span {
+    top: 15px;
+    left: 10px;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .image-input {
+    position: relative;
+    top: -50px;
+    left: 13%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #B19470;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form .image-input input[type="file"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    left: -10px;
+    bottom: 80px;
+    width: 100%;
+  }
+  
+  .flex2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    bottom: 70px;
+    font-size: medium;
+    width: 100%;
+    left: -10px;
+  }
+  
+  button.addButton {
+    position: relative;
+    bottom: 40px;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: gray;
+    background-color: #FFF0DC;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 450px;
+    cursor: pointer;
+}
+
+button.addButton:hover {
+    background-color: #FFDAC1; 
+    color: #333;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  .defaultPhoto {
+    width: 120px;
+    position: relative;
+    bottom: 24px;
+    border-radius: 50%;
+  }
+  
+  .labelIcon {
+    position: relative;
+    top: 30px;
+    left: 95%;
+  }
+  
+  .input-icon {
+    position: relative;
+    left: 95%;
+    top: 30px;
+    font-size: 20px;
+    color: gray;
+  }
+  

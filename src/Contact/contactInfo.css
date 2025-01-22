@@ -1,0 +1,133 @@
+
+.contacting .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 80px;
+  top: 60px;
+  border: 1px solid black;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #FFF6E3;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.contacting .info:hover {
+  transform: translateY(-10px); /* Slightly lift the card on hover */
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  width: 350px;
+  height: 90px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.Icon {
+  font-size: 20px;
+  color: #B19470;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover .Icon {
+  color: #bc986b; /* Change icon color on hover */
+}
+
+.contactPic {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 75px;
+  position: relative;
+  bottom: 60px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.contactPic:hover {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+  border: 2px solid #B19470; /* Border color change */
+}
+
+.head {
+  background-color: #FFF6E3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  left: 130px;
+  border: 1px solid black;
+  width: 250px;
+  padding: 20px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.head:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.head .fullName {
+  color: #B19470;
+  position: relative;
+  bottom: 75px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: color 0.3s ease;
+}
+
+.head:hover .fullName {
+  color: #bc986b; /* Change color when hovering over the header */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 190px;
+  bottom: 60px;
+  gap: 60px;
+}
+
+.deleteupdate {
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: #FFF6E3;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  border: 1px solid black;
+  transform: scale(1); 
+}
+
+.deleteupdate:hover {
+  transform: scale(1.1);
+  background-color: #B19470;
+  color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fontButton {
+  color: #B19470;
+  font-size: 15px;
+  padding: 3px;
+  transition: color 0.3s ease;
+}
+
+.deleteupdate:hover .fontButton {
+  color: #fff;
+}

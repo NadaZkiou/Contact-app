@@ -1,0 +1,93 @@
+.contactList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    gap: 15px;
+    padding: 0;
+}
+
+.contactList li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 15px; 
+    font-weight: bold;
+    background-color: rgba(255, 242, 204, 0.9);
+    padding: 10px;
+    border-radius: 10px; 
+    border: none;
+    width: 350px; 
+    height: 60px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+}
+
+.contactList li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 215, 135, 0.6), rgba(240, 200, 150, 0.4));
+    z-index: -1;
+    transform: rotate(-10deg) scale(1.3);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.contactList li:hover {
+    background-color: rgba(255, 222, 173, 1);
+    transform: translateY(-4px);
+}
+
+.contactList li:hover::before {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.contactList li img {
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid #BFA97A;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.contactList li:hover img {
+    transform: scale(1.1);
+}
+
+.searchBar {
+    border: none;
+    border-bottom: 1px solid #BFA97A;
+    outline: none;
+    font-size: 0.85em; 
+    caret-color: #A8956B;
+    width: 350px; 
+    height: 30px;
+    border-radius: 10px; 
+    padding: 8px;
+    position: relative;
+    left: 50px; 
+    top: 40px;
+    background-color: #fffbed;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.searchBar:focus {
+    background-color: #FFF8DC;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.searchIcon {
+    position: relative;
+    top: 42px;
+    left: 20px; 
+    font-size: medium;
+    color: #A8956B;
+}
